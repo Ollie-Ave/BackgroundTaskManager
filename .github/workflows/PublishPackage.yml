@@ -29,3 +29,5 @@ jobs:
       with:
         name: BackgroundTaskManager
         path: ./BackgroundTaskManager.${{ github.event.release.tag_name }}.nupkg
+    - name: Publish Nuget Package
+      run: dotnet nuget push **/*.nupkg --skip-duplicate --api-key ${{ secrets.nuget_api_key }} --source https://api.nuget.org/v3/index.json --no-symbols true
