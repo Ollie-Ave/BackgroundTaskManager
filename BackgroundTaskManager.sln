@@ -17,6 +17,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{7A32523A-5AE8-437E-90FB-3980A740590A}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\BuildGate.yml = .github\workflows\BuildGate.yml
+		.github\workflows\PublishPackage.yml = .github\workflows\PublishPackage.yml
 	EndProjectSection
 EndProject
 Global
