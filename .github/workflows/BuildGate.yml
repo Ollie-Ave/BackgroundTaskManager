@@ -16,5 +16,5 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
-      - name: Display dotnet version
+      - name: Build Lib
         run: dotnet build --configuration Release
