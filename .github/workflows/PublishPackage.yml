@@ -17,10 +17,8 @@ jobs:
         dotnet-version: 7.0.x
     - name: Build Package
       run: dotnet build -c Release
-      working-directory: ./BackgroundTaskManager
     - name: Create NuGet Package
       run: dotnet pack -c Release /p:Version=${{ github.event.release.tag_name }} /p:PackageReleaseNotes="See https://github.com/Ollie-Ave/BackgroundTaskManager/releases/tag/${{ github.event.release.tag_name }}"
-      working-directory: ./BackgroundTaskManager
     - name: Archive NuGet Package
       uses: actions/upload-artifact@v1
       with:
