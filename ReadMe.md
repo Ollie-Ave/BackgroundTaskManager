@@ -1,5 +1,7 @@
 # Background Task Manager.
 
+[![Build Gate](https://github.com/Ollie-Ave/BackgroundTaskManager/actions/workflows/BuildGate.yml/badge.svg?branch=release)](https://github.com/Ollie-Ave/BackgroundTaskManager/actions/workflows/BuildGate.yml)
+
 This is a simple dotnet library used for running background tasks in a .Net application.
 
 ## Usage
