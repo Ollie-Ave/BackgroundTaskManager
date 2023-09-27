@@ -8,9 +8,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{F8B47191-D20C-486D-A3DD-11B674D4BDDC}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		BuildGate.yml = BuildGate.yml
 		ChangeLog.md = ChangeLog.md
 		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{ABCDB225-0FD7-4A55-B32B-65621EE1A002}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{7A32523A-5AE8-437E-90FB-3980A740590A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\BuildGate.yml = .github\workflows\BuildGate.yml
 	EndProjectSection
 EndProject
 Global
@@ -26,6 +32,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ABCDB225-0FD7-4A55-B32B-65621EE1A002} = {F8B47191-D20C-486D-A3DD-11B674D4BDDC}
+		{7A32523A-5AE8-437E-90FB-3980A740590A} = {ABCDB225-0FD7-4A55-B32B-65621EE1A002}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9178906B-6F95-4B2A-866B-251151B869E7}
