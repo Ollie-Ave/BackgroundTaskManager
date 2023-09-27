@@ -1,0 +1,14 @@
+name: BuildGate
+on: 
+    pull_request:
+        types: 
+            - opened
+jobs:
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+            -uses: actions/setup-dotnet@v3
+            with:
+                dotnet-version: '7.0.x'
+        run: dotnet build
