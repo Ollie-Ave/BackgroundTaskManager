@@ -8,7 +8,6 @@
     {
         public static void InitialiseBackgroundTasks(this IServiceProvider provider)
         {
-            //  Foo
             provider.GetRequiredService<IBackgroundTaskManager>().Initialize();
         }
     }
