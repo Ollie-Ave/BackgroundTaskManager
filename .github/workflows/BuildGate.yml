@@ -11,5 +11,5 @@ jobs:
             - uses: actions/setup-dotnet@v3
               with:
                   dotnet-version: '7.0.x'
-            - run: ls
-            - run: dotnet build
+            - run: dotnet build BackgroundTaskManager.sln --configuration Release
+              working-directory: /src/BackgroundTaskManager
